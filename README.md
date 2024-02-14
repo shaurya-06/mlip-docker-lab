@@ -24,9 +24,12 @@ This message shows that your installation appears to be working correctly.
 ### Setup
 
 Clone the code from [this](https://github.com/eshetty/mlip-docker-lab) repository.
+Install all the required packages:
+```
+pip3 install -r requirements.txt
+```
 
 Run the Flask App to ensure everything works. (The flask could break due to dependency/version issues, if this is case try to troubleshoot this yourself and get the Flask app running)
-
 ```
 python3 server.py
 ```
@@ -40,7 +43,7 @@ Welcome to Docker Lab
 
 This part should help familiarize you with the process of containerizing a Flask App. A `Dockerfile` is a text document that contains all the commands a user could call on the command line to assemble an image. This helps you establish a pipeline while setting up a docker image. 
 
-You should be provided with an incomplete `Dockerfile`. Your task is fill in the TODO tasks to create a valid `Dockerfile`. Follow [this](https://docs.docker.com/engine/reference/builder/) reference guide for tips/helpful commands.
+You should be provided with an incomplete `Dockerfile`. Your task is fill in the TODO tasks to create a valid `Dockerfile`. Follow [this](https://docs.docker.com/engine/reference/builder/) reference guide for tips/helpful commands. **(Note: If you changed any of the requirement versions and you have a different Python version, make sure to update the python version in the [Dockerfile](https://github.com/eshetty/mlip-docker-lab/blob/dc7b44b3a0d55190a125565d275fe61aa6f40bbe/Dockerfile#L3))**
 
 Once you're done with the Dockerfile, you can build a docker image using the Docker CLI. Replace `<IMAGE_NAME>` with a suitable name for the Docker Image (for ex: `mlip-lab`).
 ```

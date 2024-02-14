@@ -93,7 +93,7 @@ Alternatively, you can test this on Postman as well - ensure that your body is J
 ```
 
 ## Additional resources 
-1. [Docker For Beginners](https://docker-curriculum.com/)https://docker-curriculum.com/)
-2. [Build and Deploy Flask Applications with Docker](https://www.digitalocean.com/community/tutorials/how-to-build-and-deploy-a-flask-application-using-docker-on-ubuntu-20-04)https://www.digitalocean.com/community/tutorials/how-to-build-and-deploy-a-flask-application-using-docker-on-ubuntu-20-04)
-3. [Example Tutorial on Building and Deploying ML Models on Docker](https://towardsdatascience.com/build-and-run-a-docker-container-for-your-machine-learning-model-60209c2d7a7f)
+1. [Docker For Beginners](https://docker-curriculum.com/)
+2. [Build and Deploy Flask Applications with Docker](https://www.digitalocean.com/community/tutorials/how-to-build-and-deploy-a-flask-application-using-docker-on-ubuntu-20-04)
+3. [Models on Docker](https://towardsdatascience.com/build-and-run-a-docker-container-for-your-machine-learning-model-60209c2d7a7f)
 

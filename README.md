@@ -1,11 +1,14 @@
 # Lab 5: Containerizing with Docker
-<TODO>
+In this lab, you'll learn about Docker and how to deploy Flask applications and Machine Learning models on it.
+
+Docker is a tool that allows developers, sys-admins etc. to easily deploy their applications in a sandbox (called containers) to run on the host operating system i.e. Linux. The key benefit of Docker is that it allows users to package an application with all of its dependencies into a standardized unit for software development. Unlike virtual machines, containers do not have high overhead and hence enable more efficient usage of the underlying system and resources.
+
+Complete all the Deliverables mentioned below and show it to a TA for credit.
 
 ## Deliverables
 - [ ] Setup Docker on your system
 - [ ] Containerize the Flask App
 - [ ] Deploy Machine Learning Models on Docker
-    - [ ] In this lab, we only copy the model file and run inference on Docker. Some approaches also involve both training the model and running inference on Docker. Would you think this a good approach? Discuss pros/cons with your TA.
 
 ## Deliverable 1 - Setup Docker
 

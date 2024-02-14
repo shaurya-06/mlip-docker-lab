@@ -25,11 +25,6 @@ This message shows that your installation appears to be working correctly.
 
 Clone the code from [this](https://github.com/eshetty/mlip-docker-lab) repository.
 
-Directory `app/` contains a Flask App.
-```
-cd app/
-```
-
 Run the Flask App to ensure everything works. (The flask could break due to dependency/version issues, if this is case try to troubleshoot this yourself and get the Flask app running)
 
 ```
@@ -71,13 +66,11 @@ This should work smoothly and once again `localhost:8080/` should be accessible 
 
 Now that we have a working Flask App on our Docker, we can use this to deploy machine learning models and run inference on the Flask Server. This deliverable aims to teach you how to deploy machine learning models using Flask and Docker.
 
-Once again, stay in the `app/` directory.
-
 ### Step 1 - Train a Machine Learning Model
 Run `train.py` as it is. This should create a basic SciKit Learn Iris Classifier and save the model as a pickle file. After the script runs, you should find a `iris-model.pkl` file in your directory.
 
 ### Step 2 - Fill in the Blanks in predict()
-In `app.py`, there is a function `predict()`. Fill in the TODOs to (1) Load a Machine Learning model (2) Run inference on an input sent through GET (3) Return prediction back as a response. Run the Flask App to see if your implementation works.
+In `server.py`, there is a function `predict()`. Fill in the TODOs to (1) Load a Machine Learning model (2) Run inference on an input sent through GET (3) Return prediction back as a response. Run the Flask App to see if your implementation works.
 
 ### Step 3 - Update the Dockerfile
 The `Dockerfile` needs to be updated to copy the model file into the image. Use the `COPY` command to copy the `iris-model.pkl` as you did in Deliverable (2). Repeat steps in Deliverable (2) to rebuild the image and test whether it's running on Flask.

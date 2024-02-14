@@ -73,10 +73,13 @@ Now that we have a working Flask App on our Docker, we can use this to deploy ma
 Run `train.py` as it is. This should create a basic SciKit Learn Iris Classifier and save the model as a pickle file. After the script runs, you should find a `iris-model.pkl` file in your directory.
 
 ### Step 2 - Fill in the Blanks in predict()
-In `server.py`, there is a function `predict()`. Fill in the TODOs to (1) Load a Machine Learning model (2) Run inference on an input sent through GET (3) Return prediction back as a response. Run the Flask App to see if your implementation works.
+In `server.py`, there is a function `predict()`. Fill in the TODOs to:
+1. Load a Machine Learning model 
+2. Run inference on an input sent through `GET` (Check [Calling a GET Request](https://github.com/eshetty/mlip-docker-lab/blob/dc7b44b3a0d55190a125565d275fe61aa6f40bbe/Dockerfile#L11) for the curl command)
+3. Return prediction back as a response. Run the Flask App locally to see if your implementation works.
 
 ### Step 3 - Update the Dockerfile
-The `Dockerfile` needs to be updated to copy the model file into the image. Use the `COPY` command to copy the `iris-model.pkl` as you did in Deliverable (2). Repeat steps in Deliverable (2) to rebuild the image and test whether it's running on Flask.
+The `Dockerfile` needs to be updated to copy the model file into the image. Use the `COPY` command to copy the `iris-model.pkl` as you did in [Deliverable (2)](https://github.com/eshetty/mlip-docker-lab/blob/dc7b44b3a0d55190a125565d275fe61aa6f40bbe/Dockerfile#L11). Repeat steps in Deliverable (2) to rebuild the image and test whether it's running on Flask.
 
 ### Calling a GET Request
 For this assignment, run the following CURL command to test your flask setup.
